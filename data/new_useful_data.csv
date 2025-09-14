@@ -1,0 +1,74 @@
+name,icd11,namaste
+"Accumulation of Vata pattern ",SR11,AAA-1
+"Aggravation of vata pattern ",SR12,AAA-2
+"Vitiation of vata pattern ",SR10 ,AAA-2.1
+"Spreading of vata pattern ",SR13,AAA-3
+"Depletion of vata pattern ","SR14 ",AAA-4
+"Delirium disorder ",SQ00,AAB-1
+"Lack of concentration, confusion disorder ",SQ05,AAB-2
+"Generalized body ache disorder ",SP9Y,"AAB-3 "
+"Wasting of body part(s) disorder ",SP9Y,"AAB-4 "
+"Atony disorder ",SP21,AAB-5
+"Ageusia disorder ",SM1P,AAB-7
+"Dysacousia disorder ",SK84,AAB-15
+"Hoarseness of voice disorder ",SL02,AAB-22
+"Feeling of astringent taste disorder ",SM1Y,"AAB-25 "
+"Severe fatigue disorder ",SP97,AAB-26
+"Discoloration of body disorder ",SN41,AAB-27
+"Emaciation disorder ",SP61,AAB-29
+"Scaling of scalp and forehead skin disorder ",SN4C,AAB-30
+"Cervical spondylosis disorder ",SP45,AAB-33
+"Proctalgia disorder ",SM50,AAB-35
+"Stiff ankle disorder ",SP1Y,"AAB-36 "
+"Anosmia disorder ",SK91,AAB-38
+"Breaking pain of knees disorder ",SP1Y,AAB-39
+"Lax knee disorder ",SP1Y,"AAB-40 "
+"Excessive yawning disorder ",SP95,AAB-41
+"Fainting disorder due to Vata ",SP98,AAB-42
+"Hypoesthesia disorder ",SN9Y,"AAB-44 "
+"Pricking pain disorder ",SP9Y,"AAB-45 "
+"Whole body stiffness with immobility disorder ",SK30,AAB-46
+"Loose tooth disorder ",SM1Y,"AAB-48 "
+"Brittle nails disorder ",SN60,AAB-49
+"Short hair disorder ",SN7Y,AAB-50
+"lameness (bilateral) / lower limb paralysis ",SK21,AAB-53
+"Foot drop disorder ",SK5Y,AAB-54
+"Leg pain disorder ",SP4Y,AAB-55
+"Numbness of foot disorder ",SP45,AAB-56
+"Roughness of skin disorder ",SN4R,AAB-57
+"Calf muscle cramp disorder ",SP9Y,AAB-59
+"Lumbar spondylosis disorder ",SP42,AAB-61
+"Atrophy of arm disorder ",SP4Y,AAB-64
+"Weakness disorder ",SP9Y,AAB-65
+"Splitting pain disorder ",SP9Y,AAB-66
+"Retention of stool disorder ",SM7Y,AAB-68
+"Twitching eyebrow disorder ",SK5Y,AAB-72
+"Xerostomia disorder ",SM1N,AAB-74
+"Retention of urine disorder ",SM81,AAB-75
+"Dryness of skin disorder ",SN42,AAB-77
+"Horripilation disorder ",SP9Y,AAB-78
+"Other specified headache disorders ",SK0Y,AAB-79
+"Sacroiliac joint stiffness disorder ",SP1Y,AAB-80
+"Entropion disorder ",SK7Y,AAB-82
+"Impaired thoracic mobility disorder ",SP9Y,AAB-83
+"Chest pain disorder ",SP9Y,AAB-84
+"Stammering disorder ",SK53,AAB-85
+"Talkativeness disorder ",SP9Y,AAB-86
+"Ankle deformity disorder ",SP1Y,AAB-87
+"Dwarfism disorder ",SP9Y,AAB-88
+"Diarrhoea disorder due only to Vata ",SM37,AAB-89
+"Transient depression disorder ",SQ04,AAB-91
+"Scrotal pain disorder ",SN3Y,AAB-92
+"Distention of inguinal region disorder ",SP4Y,AAB-93
+"Agonising pain disorder ",SP9Y,AAB-94
+"Vasodilatation disorder ",SL7Y,AAB-95
+"Oligospermia disorder ",SN03,AAB-97
+"Priapism disorder ",SN07,AAB-99
+"Chills disorder only due to Kapha ",SP9Y,AAB-100
+"Contracture disorder ",SP9Y,AAB-103
+"Physical exhaustion disorder ",SP9Y,AAB-105
+"Stiffness disorder ",SK52,AAB-107
+"Jaw pain disorder ",SP4Y,AAB-108
+"Palpitation disorder ",SL62,AAB-110
+"Slow heart disorder ",SL60,AAB-111
+"Emprosthotonus disorder ",SK30,AAC-1

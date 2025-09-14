@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCode Bridge - Healthcare IT Solutions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <svg class="logo-icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <span class="brand-text">MediCode Bridge</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <button class="nav-item active" data-page="home">Home</button>
+                <button class="nav-item" data-page="features">Features</button>
+                <button class="nav-item" data-page="api-docs">API Docs</button>
+                <button class="nav-item" data-page="use-cases">Use Cases</button>
+                <button class="nav-item" data-page="contact">Contact</button>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Landing Page -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="container">
+                    <h1 class="hero-title">Bridging Traditional Medicine with Global Standards</h1>
+                    <p class="hero-subtitle">
+                        Seamlessly integrate NAMASTE (AYUSH) terminology with WHO ICD-11 Traditional Medicine Module 2.
+                    </p>
+
+                    <!-- Search Bar -->
+                    <div class="search-container">
+                        <div class="search-bar">
+                            <input 
+                                type="text" 
+                                id="searchInput"
+                                placeholder="Enter disease name (e.g., Diabetes, Vata Vyadhi)..."
+                                class="search-input"
+                            >
+                            <button id="searchBtn" class="search-button">Search</button>
+                        </div>
+                    </div>
+
+                    <!-- Search Results -->
+                    <div id="searchResults" class="search-results hidden">
+                        <div class="results-grid">
+                            <div class="result-card namaste-card">
+                                <h3>NAMASTE Code</h3>
+                                <div id="namasteCode" class="code-display"></div>
+                                <div class="code-description">AYUSH Terminology System</div>
+                            </div>
+                            <div class="result-card icd-card">
+                                <h3>ICD-11 TM2 Code</h3>
+                                <div id="icdCode" class="code-display"></div>
+                                <div class="code-description">WHO International Classification</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features Grid -->
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🌍</div>
+                            <h3>Global Standards</h3>
+                            <p>WHO ICD-11 TM2 compliance for international interoperability</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">❤️</div>
+                            <h3>Traditional Medicine</h3>
+                            <p>NAMASTE terminology for comprehensive AYUSH integration</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🛡️</div>
+                            <h3>Secure & Compliant</h3>
+                            <p>Indian EHR standards with enterprise-grade security</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Page -->
+        <section id="features" class="page">
+            <div class="container">
+                <h1 class="page-title">Features</h1>
+                <div class="features-detailed-grid">
+                    <div class="feature-detailed-card">
+                        <h3>NAMASTE Integration</h3>
+                        <p>Complete integration with NAMASTE (AYUSH) terminology system for traditional medicine coding.</p>
+                    </div>
+                    <div class="feature-detailed-card">
+                        <h3>ICD-11 TM2 Mapping</h3>
+                        <p>Seamless mapping to WHO ICD-11 Traditional Medicine Module 2 for global standardization.</p>
+                    </div>
+                    <div class="feature-detailed-card">
+                        <h3>FHIR Compliance</h3>
+                        <p>Full compliance with FHIR standards and Indian EHR guidelines.</p>
+                    </div>
+                    <div class="feature-detailed-card">
+                        <h3>Dual-Coding Support</h3>
+                        <p>Simultaneous support for both AYUSH and international coding systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Documentation Page -->
+        <section id="api-docs" class="page">
+            <div class="container">
+                <h1 class="page-title">API Documentation</h1>
+                <div class="api-docs-content">
+                    <h2>Getting Started</h2>
+                    <div class="api-section">
+                        <h3>Authentication</h3>
+                        <div class="code-block">
+                            <pre><code>POST /auth/token
+Content-Type: application/json
+
+{
+  "client_id": "your_client_id",
+  "client_secret": "your_client_secret"
+}</code></pre>
+                        </div>
+                    </div>
+                    <div class="api-section">
+                        <h3>Search Codes</h3>
+                        <div class="code-block">
+                            <pre><code>GET /api/search?q=diabetes
+Authorization: Bearer YOUR_ACCESS_TOKEN</code></pre>
+                        </div>
+                    </div>
+                    <div class="api-section">
+                        <h3>Response Format</h3>
+                        <div class="code-block">
+                            <pre><code>{
+  "results": [
+    {
+      "name": "Diabetes Mellitus",
+      "namaste": "NAM-DM-001",
+      "icd11": "EE90.0"
+    }
+  ]
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases Page -->
+        <section id="use-cases" class="page">
+            <div class="container">
+                <h1 class="page-title">Use Cases</h1>
+                <div class="use-case-content">
+                    <div class="workflow-section">
+                        <h3>Clinical Workflow</h3>
+                        <div class="workflow-steps">
+                            <div class="workflow-step">
+                                <div class="step-number">1</div>
+                                <p>Doctor enters diagnosis</p>
+                            </div>
+                            <div class="workflow-step">
+                                <div class="step-number">2</div>
+                                <p>System suggests codes</p>
+                            </div>
+                            <div class="workflow-step">
+                                <div class="step-number">3</div>
+                                <p>Automatic mapping</p>
+                            </div>
+                            <div class="workflow-step">
+                                <div class="step-number">4</div>
+                                <p>Stored in EMR</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="use-case-examples">
+                        <div class="use-case-card">
+                            <h3>Hospital EMR Integration</h3>
+                            <p>Large hospitals can integrate our API to automatically map traditional medicine diagnoses to both NAMASTE and ICD-11 codes, ensuring compliance with both Indian and international standards.</p>
+                        </div>
+                        <div class="use-case-card">
+                            <h3>Research & Analytics</h3>
+                            <p>Medical researchers can use standardized codes to conduct cross-cultural studies comparing traditional and modern medicine approaches across different healthcare systems.</p>
+                        </div>
+                        <div class="use-case-card">
+                            <h3>Insurance Claims</h3>
+                            <p>Insurance companies can process claims more efficiently with standardized coding that covers both conventional and traditional medicine treatments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <div class="contact-content">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <button id="chatbotToggle" class="chatbot-toggle">💬</button>
+        <div id="chatbotWindow" class="chatbot-window hidden">
+            <div class="chatbot-header">
+                <h3>MediCode Assistant</h3>
+                <p>Ask about code mappings</p>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="bot-message">
+                    Hello! I can help with NAMASTE-ICD11 mappings. Try asking:
+                    "What is the ICD-11 code for Vata Vyadhi?"
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Ask about code mappings...">
+                <button id="chatbotSend">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
