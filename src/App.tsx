@@ -433,8 +433,7 @@ function Chatbot() {
 						<div className="bg-white/10 p-3 rounded-lg mb-4">
 							<p className="text-white/90 text-sm">
 								Hello! I can help with NAMASTE-ICD11 mappings.
-								Try asking: "What is the ICD-11 code for Vata
-								Vyadhi?"
+								Try asking: "What is the ICD-11 code for kashayasyata?"
 							</p>
 						</div>
 					</div>

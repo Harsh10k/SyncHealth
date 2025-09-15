@@ -43,17 +43,17 @@ export default function LandingPage() {
           >
             {[
               {
-                icon: <Globe className="w-8 h-8" />,
+                // icon: <Globe className="w-8 h-8" />,
                 title: 'Global Standards',
                 description: 'WHO ICD-11 TM2 compliance for international interoperability'
               },
               {
-                icon: <Heart className="w-8 h-8" />,
+                // icon: <Heart className="w-8 h-8" />,
                 title: 'Traditional Medicine',
                 description: 'NAMASTE terminology for comprehensive AYUSH integration'
               },
               {
-                icon: <Shield className="w-8 h-8" />,
+                // icon: <Shield className="w-8 h-8" />,
                 title: 'Secure & Compliant',
                 description: 'Indian EHR standards with enterprise-grade security'
               }

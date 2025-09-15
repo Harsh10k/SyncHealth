@@ -38,19 +38,27 @@ def chatbot_response():
     message = request.args.get('message', '').lower()
     
     # Simple chatbot responses
-    if 'diabetes' in message:
-        response = "Diabetes Mellitus has NAMASTE code NAM-DM-001 and ICD-11 code EE90.0."
-    elif 'vata' in message:
-        response = "Vata Vyadhi has NAMASTE code NAM-VV-101 and ICD-11 code QD85.0."
-    elif 'hypertension' in message:
-        response = "Hypertension has NAMASTE code NAM-HTN-002 and ICD-11 code EE91.1."
-    elif 'asthma' in message:
-        response = "Asthma has NAMASTE code 1234 and ICD-11 code ABCD."
-    elif 'help' in message or 'what' in message:
-        response = "I can help you find NAMASTE and ICD-11 codes for diseases. Try asking about specific conditions like diabetes, hypertension, vata vyadhi, or asthma."
-    else:
-        response = "I understand you're asking about medical codes. Please specify a disease name, and I'll provide the corresponding NAMASTE and ICD-11 codes."
-    
+    # if 'diabetes' in message:
+    #     response = "Diabetes Mellitus has NAMASTE code NAM-DM-001 and ICD-11 code EE90.0."
+    # elif 'vata' in message:
+    #     response = "Vata Vyadhi has NAMASTE code NAM-VV-101 and ICD-11 code QD85.0."
+    # elif 'hypertension' in message:
+    #     response = "Hypertension has NAMASTE code NAM-HTN-002 and ICD-11 code EE91.1."
+    # elif 'asthma' in message:
+    #     response = "Asthma has NAMASTE code 1234 and ICD-11 code ABCD."
+    # elif 'help' in message or 'what' in message:
+    #     response = "I can help you find NAMASTE and ICD-11 codes for diseases. Try asking about specific conditions like diabetes, hypertension, vata vyadhi, or asthma."
+    # else:
+    #     response = "I understand you're asking about medical codes. Please specify a disease name, and I'll provide the corresponding NAMASTE and ICD-11 codes."
+    for disease in diseases1:
+        if ((disease['name'].lower().strip() in message.lower().strip()) or (disease['Ayurveda_Name'] in message.lower())) and (("ICD-11" in message) or ("icd-11" in message) or ("icd11" in message)):
+            response = f"{disease['name'].strip()}, which is {disease['Ayurveda_Name']} has the ICD-11 code {disease['icd11']}"
+            break
+        elif ((disease['name'].lower().strip() in message.lower().strip()) or (disease['Ayurveda_Name'] in message.lower())) and (("Namaste" in message) or ("namaste" in message) or ("NAMASTE" in message)):
+            response = f"{disease['name'].strip()}, which is {disease['Ayurveda_Name']} has the NAMASTE code {disease['namaste']}"
+            break
+        else:
+            response = "I can help you find NAMASTE and ICD-11 codes for diseases. Try asking about specific conditions"
     return jsonify({'response': response})
 
 if __name__ == '__main__':
