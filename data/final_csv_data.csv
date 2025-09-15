@@ -1,0 +1,74 @@
+name,Ayurveda_Name,icd11,namaste
+"Accumulation of Vata pattern ",vatasajcayah,SR11,AAA-1
+"Aggravation of vata pattern ",vatavruddhih,SR12,AAA-2
+"Vitiation of vata pattern ",vataprakopah,SR10 ,AAA-2.1
+"Spreading of vata pattern ",vataprasaranam,SR13,AAA-3
+"Depletion of vata pattern ",vatakshayah,"SR14 ",AAA-4
+"Delirium disorder ",atipralapah,SQ00,AAB-1
+"Lack of concentration, confusion disorder ",anavasthitacittatvam,SQ05,AAB-2
+"Generalized body ache disorder ",aggamardah,SP9Y,"AAB-3 "
+"Wasting of body part(s) disorder ",aggasushkata,SP9Y,"AAB-4 "
+"Atony disorder ",aggavibramsah,SP21,AAB-5
+"Ageusia disorder ",arasajjata,SM1P,AAB-7
+"Dysacousia disorder ",uccaihsrutih,SK84,AAB-15
+"Hoarseness of voice disorder ",kanthodhvamsah,SL02,AAB-22
+"Feeling of astringent taste disorder ",kashayasyata,SM1Y,"AAB-25 "
+"Severe fatigue disorder ",klamah,SP97,AAB-26
+"Discoloration of body disorder ",karshnyam,SN41,AAB-27
+"Emaciation disorder ",karsyam,SP61,AAB-29
+"Scaling of scalp and forehead skin disorder ",kesabumisputanam,SN4C,AAB-30
+"Cervical spondylosis disorder ",grivastambah,SP45,AAB-33
+"Proctalgia disorder ",gudartih,SM50,AAB-35
+"Stiff ankle disorder ",gulpa-grahah,SP1Y,"AAB-36 "
+"Anosmia disorder ",ghrananasah/nasahundanam,SK91,AAB-38
+"Breaking pain of knees disorder ",janubedah,SP1Y,AAB-39
+"Lax knee disorder ",januvisleshah,SP1Y,"AAB-40 "
+"Excessive yawning disorder ",jrumba,SP95,AAB-41
+"Fainting disorder due to Vata ",tamah,SP98,AAB-42
+"Hypoesthesia disorder ",tvaksunyata,SN9Y,"AAB-44 "
+"Pricking pain disorder ",todah,SP9Y,"AAB-45 "
+"Whole body stiffness with immobility disorder ",dandakah,SK30,AAB-46
+"Loose tooth disorder ",dantasaithilyam,SM1Y,"AAB-48 "
+"Brittle nails disorder ",nakhabedah,SN60,AAB-49
+"Short hair disorder ",hrasvakesah,SN7Y,AAB-50
+"lameness (bilateral) / lower limb paralysis ",paggulyam,SK21,AAB-53
+"Foot drop disorder ",padabramsah,SK5Y,AAB-54
+"Leg pain disorder ",padasulah,SP4Y,AAB-55
+"Numbness of foot disorder ",padasuptata,SP45,AAB-56
+"Roughness of skin disorder ",parushyam,SN4R,AAB-57
+"Calf muscle cramp disorder ",pindikodveshtanam,SP9Y,AAB-59
+"Lumbar spondylosis disorder ",prushtha-grahah,SP42,AAB-61
+"Atrophy of arm disorder ",bahusoshah,SP4Y,AAB-64
+"Weakness disorder ",balahanih,SP9Y,AAB-65
+"Splitting pain disorder ",bedah,SP9Y,AAB-66
+"Retention of stool disorder ",mala-apravrutih,SM7Y,AAB-68
+"Twitching eyebrow disorder ",bruvyudasah,SK5Y,AAB-72
+"Xerostomia disorder ",mukhasoshah,SM1N,AAB-74
+"Retention of urine disorder ",mutranigrahah,SM81,AAB-75
+"Dryness of skin disorder ",raukshyam,SN42,AAB-77
+"Horripilation disorder ",lomaharshah,SP9Y,AAB-78
+"Other specified headache disorders ",lalatabedah,SK0Y,AAB-79
+"Sacroiliac joint stiffness disorder ",trikagrahah,SP1Y,AAB-80
+"Entropion disorder ",vartmasagkocah,SK7Y,AAB-82
+"Impaired thoracic mobility disorder ",vakshoparodhah,SP9Y,AAB-83
+"Chest pain disorder ",vakshastodah,SP9Y,AAB-84
+"Stammering disorder ",vak-saggah,SK53,AAB-85
+"Talkativeness disorder ",vacalata,SP9Y,AAB-86
+"Ankle deformity disorder ",vatakhuddata/vatakantakah,SP1Y,AAB-87
+"Dwarfism disorder ",vamanatvam,SP9Y,AAB-88
+"Diarrhoea disorder due only to Vata ",vid-bedah,SM37,AAB-89
+"Transient depression disorder ",vishadah/dinata,SQ04,AAB-91
+"Scrotal pain disorder ",vrushanakshepah,SN3Y,AAB-92
+"Distention of inguinal region disorder ",vagkshananahah,SP4Y,AAB-93
+"Agonising pain disorder ",vyatha,SP9Y,AAB-94
+"Vasodilatation disorder ",siraspurtih,SL7Y,AAB-95
+"Oligospermia disorder ",sukrakshayah,SN03,AAB-97
+"Priapism disorder ",sepastambah,SN07,AAB-99
+"Chills disorder only due to Kapha ",saityam,SP9Y,AAB-100
+"Contracture disorder ",sagkocah,SP9Y,AAB-103
+"Physical exhaustion disorder ",sramah,SP9Y,AAB-105
+"Stiffness disorder ",stambah,SK52,AAB-107
+"Jaw pain disorder ",hanubedah,SP4Y,AAB-108
+"Palpitation disorder ",hruddravah,SL62,AAB-110
+"Slow heart disorder ",hrunmohah,SL60,AAB-111
+"Emprosthotonus disorder ",antarayamah,SK30,AAC-1

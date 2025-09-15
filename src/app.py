@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
-diseases1 = pd.read_csv(r"data\new_useful_data.csv")
+diseases1 = pd.read_csv(r"data\final_csv_data.csv")
 diseases1 = diseases1.to_dict(orient="records")
 
 # Disease data matching React App.tsx
@@ -28,7 +28,7 @@ def search_disease():
     
     results = []
     for disease in diseases1:
-        if query in disease['name'].lower():
+        if (query in disease['name'].lower()) or (query in disease['Ayurveda_Name']):
             results.append(disease)
     
     return jsonify({'results': results})
